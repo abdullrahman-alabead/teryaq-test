@@ -4,6 +4,7 @@
   background-image: url(../../assets/images/landing.png);
   background-repeat: no-repeat;
   background-size: cover;
+  overflow: hidden;
   .landing-text{
   width: 930px;
   font: {
@@ -29,5 +30,29 @@
 
       }
     }
+  }
+  &::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: -25rem;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 25rem;
+    border-color: transparent transparent rgb(0 0 0 / 25%) transparent;
+    z-index: 100;
+  }
+  &::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -25rem;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 25rem;
+    border-color: rgb(0 0 0 / 25%) transparent transparent  transparent;
+    z-index: 100;
   }
 }

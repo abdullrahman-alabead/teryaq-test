@@ -4,6 +4,7 @@ import "./Services.scss";
 let Services = () => {
   return (
     <div className="services container-fluid text-center">
+      <div className="dotted-box"></div>
       <p className="main-heading">Our Services</p>
       <div className="switcher">
         <button className="switch-btn special-btn">Specialized Services</button>

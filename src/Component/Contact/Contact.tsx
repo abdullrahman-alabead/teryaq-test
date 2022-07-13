@@ -4,7 +4,8 @@ import './Contact.scss'
 let Contact = () => {
   return(
     <div className='contact container-fluid'>
-      <p className="main-heading">Message Us</p>
+      <p className="main-heading">Message Us
+      <div className="triangle"></div></p>
       <form>
         <Row>
           <Col className='col' >

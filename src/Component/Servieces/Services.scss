@@ -1,5 +1,15 @@
 .services{
+  position: relative;
   background-color: #F0F0F0;
+  .dotted-box{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 5rem;
+    right: 20rem;
+    
+    border: .1rem dashed #5cb7fa ;
+  }
   .main-heading{
     font-size: 3rem;
   }
