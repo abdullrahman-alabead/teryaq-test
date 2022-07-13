@@ -1,0 +1,17 @@
+.header{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+    .nav-links{
+      margin-bottom: 0;
+      .nav-link{
+        padding: 4rem 2rem;
+        font-family: 'Readex-pro';
+        cursor: pointer;
+        color: white;
+      }
+    }
+  
+}

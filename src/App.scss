@@ -1,0 +1,44 @@
+// Global Rules
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-weight: 700;
+}
+
+a{
+  text-decoration: none;
+}
+
+ul{
+  list-style: none;
+  padding: 0;
+}
+
+.container-fluid{
+  margin: 0;
+  padding: 55px 70px;
+}
+
+.landing-img{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.main-heading{
+  color: #188486;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+// Fonts
+@font-face {
+  font-family: 'Readex-pro';
+  src: url(./assets/Fonts/ReadexPro-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url('./assets/Fonts/Inter-Regular.ttf');
+}

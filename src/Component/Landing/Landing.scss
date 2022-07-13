@@ -1,0 +1,33 @@
+.landing{
+  position: relative;
+  height: 100vh;
+  background-image: url(../../assets/images/landing.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  .landing-text{
+  width: 930px;
+  font: {
+    size: 2rem;
+    family:"Readex-pro";
+    }
+  }
+  .slider{
+    bottom: 3rem;
+      left: 50%;
+      transform: translateX(-50%);
+    .slider-button{
+      width: 12px;
+      height: 12px;
+      background-color: white;
+      border-radius: 50%;
+      
+      &:not(:last-child){
+        margin-right: 1rem;
+      }
+      &.active{
+        background: #188486;
+
+      }
+    }
+  }
+}
