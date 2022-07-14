@@ -1,5 +1,7 @@
+@use '../../variables' as v;
+
 .contact{
-  background-color: rgb(217 217 217 / 20%);
+  background-color: v.$secondery-light-color;
   .main-heading{
     margin-bottom: 86px;
   }
@@ -14,6 +16,8 @@
       box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.1);
       resize: none;
       height: 100%;
+      background-color: v.$service-light-color;
+      color: v.$light-color-alt;
       &:first-child{
         margin-bottom: 3rem;
       }
@@ -31,8 +35,8 @@
     right: 2rem;
     width: 88px;
   height: 24px;
-  color: white;
-  background: #188486;
+  ;
+  background: v.$main-color;
   border-radius: 25px;
   border: none;
 

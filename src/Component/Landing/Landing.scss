@@ -1,3 +1,5 @@
+@use '../../variables' as v;
+
 .landing{
   position: relative;
   height: 100vh;
@@ -27,10 +29,10 @@
         margin-right: 1rem;
       }
       &.active{
-        background: #188486;
+        background: v.$main-color;
       }
       &:hover{
-        background: #188486;
+        background: v.$main-color;
       }
     }
   }

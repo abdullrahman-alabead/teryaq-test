@@ -1,10 +1,14 @@
+@use '../../variables' as v;
+
 .clients-container{
   position: relative;
+  background-color: v.$primary-light-color;
   .clients-slider{
     width: 500px;
     position: relative;
     margin-bottom: 2rem;
     overflow: hidden;
+    z-index: 2;
     .clients{
     transform: translateX(2rem);
     transition-duration: 1s;
@@ -14,7 +18,8 @@
       position: relative;
       text-align: center;
       width: 450px;
-      background-color: #f0f0f0;
+      background-color: v.$secondery-light-color;
+      color: v.$primary-light-text-color;
       padding: 1rem 2rem;
       border-radius: .3rem;
       margin-right: 3rem;
@@ -23,7 +28,7 @@
       }
       .stars{
         margin-bottom:2rem ;
-        color: #55a58a;
+        color: v.$main-color;
       }
       .client-img{
         position: absolute;
@@ -31,7 +36,7 @@
         top: 0;
         left: 0;
         transform: translate(-30%, -30%);
-        border: .4rem solid white;
+        border: .4rem solid v.$primary-light-color;
         border-radius: 50%;
       }
     }
@@ -52,7 +57,7 @@
         margin-right: .5rem;
       }
       &.active, &:hover{
-        background-color: #7DB6A3;
+        background-color: v.$main-color;
       }
     }
   }
@@ -60,7 +65,7 @@
     position: absolute;
     right: 0;
     top: 50%;
-    z-index: -1;
+    z-index: 1;
     &.left-dots{
       top: 20%;
       left: 10%;

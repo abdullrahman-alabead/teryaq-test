@@ -1,4 +1,4 @@
-
+@use '../../variables' as v;
 .header{
   position: absolute;
   top: 0;
@@ -16,7 +16,7 @@
         a{
           color: white;
           transition:.4s;
-
+          height: 100%;
         }
         &:hover a{
           color: rgb(168, 188, 222);
