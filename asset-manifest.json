@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/teryaq-test/static/css/main.fe806922.css",
+    "main.js": "/teryaq-test/static/js/main.ba1f7926.js",
+    "static/media/landing.png": "/teryaq-test/static/media/landing.6d91f87bac4c4ce5366f.png",
+    "static/media/Inter-Regular.ttf": "/teryaq-test/static/media/Inter-Regular.e89cb19905e7db5591b0.ttf",
+    "static/media/workers.png": "/teryaq-test/static/media/workers.ab707a97943e3324b091.png",
+    "static/media/ReadexPro-Regular.ttf": "/teryaq-test/static/media/ReadexPro-Regular.452096e0fc6c44651530.ttf",
+    "index.html": "/teryaq-test/index.html",
+    "main.fe806922.css.map": "/teryaq-test/static/css/main.fe806922.css.map",
+    "main.ba1f7926.js.map": "/teryaq-test/static/js/main.ba1f7926.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fe806922.css",
+    "static/js/main.ba1f7926.js"
+  ]
+}
