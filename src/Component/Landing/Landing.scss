@@ -21,13 +21,16 @@
       height: 12px;
       background-color: white;
       border-radius: 50%;
+      transition: .4s;
       
       &:not(:last-child){
         margin-right: 1rem;
       }
       &.active{
         background: #188486;
-
+      }
+      &:hover{
+        background: #188486;
       }
     }
   }
@@ -57,6 +60,32 @@
   }
 }
 
+// Animations:
+.landing-text{
+  opacity: 0;
+  animation: fadeIn 2s 2s forwards;
+}
+
+@for $i from 1 through 4 {
+  .slider-button:nth-child(#{$i}){
+    opacity: 0;
+    animation: fadeInDown 0.2s ease-in-out forwards;
+    animation-delay: #{$i * .3}s;
+  }
+}
+.landing{
+  &::after{
+    opacity: 0;
+    animation: fadeInLeft 1s 1.5s forwards ease-in-out;
+  }
+  &::before{
+    opacity: 0;
+    animation: fadeInRight 1s 1.5s forwards ease-in-out;
+  }
+}
+
+
+// Media Queries:
 @media (max-width: 768px) {
   .landing .landing-text{
     width: 390px;

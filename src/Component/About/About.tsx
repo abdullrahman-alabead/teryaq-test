@@ -2,6 +2,19 @@ import './About.scss'
 let image =  require('../../assets/images/workers.png')
 
 let About = () => {
+
+  // Heading onScroll fadeIn effect
+  window.addEventListener("scroll", () => {
+    let aboutHeading = document.querySelector(".about-container .main-heading")
+    if(aboutHeading instanceof HTMLElement){
+      if(window.scrollY >= (aboutHeading.offsetTop + 400)){
+        aboutHeading.style.animation = "fadeIn 1s ease-in-out forwards"
+        let img = document.querySelector(".workers-img") as HTMLElement
+        img.style.animation = "fadeInRight 1s 1s ease-in-out forwards"
+      }
+
+    }
+  })
   
   return(
     <div className='about-container container-fluid'>

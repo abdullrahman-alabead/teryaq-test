@@ -1,5 +1,6 @@
 // Dependencies Import
 import 'bootstrap/dist/css/bootstrap.min.css'
+import 'animate.css'
 // Components imports
 import Header from './Component/Header/Header';
 import Landing from './Component/Landing/Landing';
@@ -10,6 +11,7 @@ import './App.scss';
 import './assets/images/landing.png'
 
 function App() {
+
   return (
     <div className="App">
       <Header /> 

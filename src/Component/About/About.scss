@@ -1,7 +1,9 @@
 .about-container{
   position: relative;
   overflow: hidden;
-
+  .main-heading{
+    opacity: 0;
+  }
     
   .about{
     font-size: 22px;
@@ -13,6 +15,7 @@
     right: 0;
     bottom: 0;
     width: 500px;
+    opacity: 0;
   }
   &::after{
     content: '';
@@ -40,6 +43,9 @@
   }
 }
 
+
+
+// Media Queries:
 @media (max-width: 991px){
   .about-container{
     .about{

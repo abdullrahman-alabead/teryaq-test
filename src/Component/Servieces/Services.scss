@@ -54,6 +54,9 @@
     border-radius: 1rem;
     box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.15);
     margin-bottom: 3.5rem;
+    transition-duration: .4s;
+    cursor: pointer;
+    opacity: 0;
     &:not(:last-child){
       margin-right: 2rem;
     }
@@ -71,6 +74,11 @@
       background-color: #333333;
       color: white;
     }
+    &:hover{
+      transform: translateY(-10px);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.30);
+
+    }
   }
   .slider{
     .slider-btn{
@@ -78,10 +86,14 @@
       height: 12px;
       border-radius: 50%;
       background-color: #d9d9d9;
+      transition-duration: .4s;
       &:first-child{
         margin-right: 1rem;
       }
       &.active{
+        background-color: #7DB6A3;
+      }
+      &:hover{
         background-color: #7DB6A3;
       }
     }

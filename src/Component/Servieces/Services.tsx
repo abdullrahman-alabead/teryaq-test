@@ -2,6 +2,39 @@ import { Col, Row } from "react-bootstrap";
 import "./Services.scss";
 
 let Services = () => {
+
+  // Toggle Service
+  function toggleService(e: EventTarget) {
+    // remove class "active" from all services
+    let services = document.querySelectorAll(".service")
+    for (let i = 0; i < services.length; i++) {
+      services[i].classList.remove("active")
+      services[i].firstElementChild?.firstElementChild?.setAttribute("fill", "#008484")
+    }
+    // add class "active" / change colors of the pressed service
+    if (e instanceof HTMLElement){
+      e.classList.add("active")
+      e.firstElementChild?.firstElementChild?.setAttribute("fill", "white")
+    }
+  }
+
+  // Scroll Animation:
+   // Heading onScroll fadeIn effect
+    window.addEventListener("scroll", () => {
+    let services= document.querySelectorAll(".service")
+    for (let i = 0; i < services.length; i++) {
+      let service = services[i]
+      if(service instanceof HTMLElement){
+        if(window.scrollY > 1000){
+          console.log(service.offsetTop)
+          service.style.animation = `fadeIn 1s ${i / 2}s ease-in-out forwards`
+        }
+      }
+      
+    }
+  })
+
+
   return (
     <div className="services container-fluid text-center">
       <div className="dotted-box"></div>
@@ -16,9 +49,9 @@ let Services = () => {
         nisi ut aliquip ex ea commodo consequat.{" "}
       </p>
       <div className="services d-flex justify-content-center align-items-center ">
-      <Row className="">
+      <Row>
         <Col>
-        <div className="service active">
+        <div className="service active" onClick={(e) => toggleService(e.currentTarget)}>
           <svg className= "service-icon"
             width="68"
             height="68"
@@ -48,9 +81,8 @@ let Services = () => {
           </p>
           </div>
         </Col>
-        
         <Col>
-        <div className="service">
+        <div className="service" onClick={(e) => toggleService(e.currentTarget)}>
           <svg className= "service-icon"
             width="66"
             height="57"
@@ -82,7 +114,7 @@ let Services = () => {
           </div>
         </Col>
         <Col>
-        <div className="service">
+        <div className="service" onClick={(e) => toggleService(e.currentTarget)}>
           <svg className= "service-icon"
             width="58"
             height="63"
@@ -106,7 +138,7 @@ let Services = () => {
           </div>
         </Col>
         <Col>
-        <div className="service">
+        <div className="service" onClick={(e) => toggleService(e.currentTarget)}>
           <svg className= "service-icon"
             width="60"
             height="61"
@@ -162,7 +194,7 @@ let Services = () => {
           </div>
         </Col>
         <Col>
-        <div className="service">
+        <div className="service" onClick={(e) => toggleService(e.currentTarget)}>
           <svg className= "service-icon"
             width="67"
             height="58"
@@ -186,7 +218,7 @@ let Services = () => {
           </div>
         </Col>
         <Col>
-        <div className="service">
+        <div className="service" onClick={(e) => toggleService(e.currentTarget)}>
           <svg className= "service-icon"
             width="56"
             height="67"
