@@ -4,12 +4,12 @@
 
 ### Technologies Used:
 
--HTML
--CSS (SASS Preproseccor, Bootstrap 5 Framework)
--JavaScript (TypeScript)
--React
+- HTML
+- CSS (SASS Preproseccor, Bootstrap 5 Framework)
+- JavaScript (TypeScript)
+- React
 
 ### Dependencies Used:
 
--Animate.css
--Font Awesome Icons
+- Animate.css
+- Font Awesome Icons
