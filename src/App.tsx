@@ -17,17 +17,16 @@ import './App.scss';
 function App() {
 
   // Remove loader when page fully load
-  window.addEventListener("load", () => {
-    let loader = document.querySelector(".loader");
-    if(loader instanceof HTMLElement){
-      loader.style.animation = "fadeOut 1s ease-out forwards"
-    }
-  })
+  // window.addEventListener("load", () => {
+  //   let loader = document.querySelector(".loader");
+  //   if(loader instanceof HTMLElement){
+  //     loader.style.animation = "fadeOut 1s ease-out forwards"
+  //   }
+  // })
   return (
     <div className="App">
       <button className='scrollTop' onClick={() => window.scrollTo(0,0)}><FontAwesomeIcon icon={faArrowUp} /></button>
-      <div className="loader">
-      </div>
+      {/* <div className="loader"></div> */}
       <Header /> 
       <Landing />
       <About />
