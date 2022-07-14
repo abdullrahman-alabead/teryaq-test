@@ -39,3 +39,20 @@
     z-index: -1;
   }
 }
+
+@media (max-width: 991px){
+  .about-container{
+    .about{
+      font-size: 0.7rem;
+      width: 100%;
+    }
+    .workers-img{
+      display: none;
+    }
+    &::after{
+      border-width: 5rem;
+      right: -5rem;
+      opacity: 50%;
+    }
+  }
+}

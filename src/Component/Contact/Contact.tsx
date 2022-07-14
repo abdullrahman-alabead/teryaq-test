@@ -16,8 +16,8 @@ let Contact = () => {
           <input type="text" placeholder='Enter Company...' />
           <input type="text" placeholder='Enter Text...' />
           </Col>
-          <Col className='col' xs={6}>
-          <textarea placeholder='Enter Message...' className='h-100 m-0' />
+          <Col className='col' md={12} lg={6}>
+          <textarea placeholder='Enter Message...' className='m-0' />
           <button type='submit' className='submit-btn'>Submit</button>
           </Col>
         </Row>

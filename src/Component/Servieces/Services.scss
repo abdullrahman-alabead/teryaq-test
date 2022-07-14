@@ -38,7 +38,7 @@
   .services-desc{
     text-align: center;
     font-size: 22px;
-    width: 1289px;
+    width: 100%;
     margin-bottom: 4.2rem;
     margin: 0 auto 4.2rem;    
   }
@@ -84,6 +84,32 @@
       &.active{
         background-color: #7DB6A3;
       }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .services {
+    margin-bottom: 1rem;
+    .dotted-box{
+      right: .7rem;
+    }
+    .switcher{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .switch-btn{
+        padding: .8rem 0;
+        width: 150px;
+        font-size: .8rem;
+      }
+    }
+    .services-desc{
+      width: 100%;
+      font-size: 1rem;
+    }
+    .service{
+      margin: 0 auto 1rem;
     }
   }
 }

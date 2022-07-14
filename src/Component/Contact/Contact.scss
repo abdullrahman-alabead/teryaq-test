@@ -13,6 +13,7 @@
       border-radius: 1rem;
       box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.1);
       resize: none;
+      height: 100%;
       &:first-child{
         margin-bottom: 3rem;
       }
@@ -29,11 +30,32 @@
     bottom: .5rem;
     right: 2rem;
     width: 88px;
-height: 24px;
-color: white;
-background: #188486;
-border-radius: 25px;
-border: none;
+  height: 24px;
+  color: white;
+  background: #188486;
+  border-radius: 25px;
+  border: none;
 
+  }
+}
+
+@media (max-width: 1255px) {
+  .contact{
+    .col{
+      margin-bottom: 3rem;
+      textarea{
+        height: 10rem;
+      }
+    }
+  }
+}
+@media (max-width: 991px) {
+  .contact{
+    .col{
+      margin-bottom: 3rem;
+    }
+    textarea{
+      height: 10rem;
+    }
   }
 }

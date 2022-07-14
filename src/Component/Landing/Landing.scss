@@ -56,3 +56,16 @@
     z-index: 100;
   }
 }
+
+@media (max-width: 768px) {
+  .landing .landing-text{
+    width: 390px;
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .landing::after, .landing::before{
+    border-width: 20rem;
+  }
+}

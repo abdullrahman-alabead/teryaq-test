@@ -13,5 +13,17 @@
         color: white;
       }
     }
-  
+}
+
+
+@media (max-width: 991px) {
+  .header{
+    .nav-links{
+      .nav-link{
+        padding: 2rem 1rem;
+        font-size: .8rem;
+        text-align: center;
+      }
+    }
+  }
 }
