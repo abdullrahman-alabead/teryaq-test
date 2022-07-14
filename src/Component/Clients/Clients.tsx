@@ -15,10 +15,12 @@ let Clients = () => {
   // Activate Button:
   function activateBtn(btn: EventTarget){
     let btns = document.querySelectorAll(".slider-btn")
+      // remove class Active
     for (let i = 0; i < btns.length; i++) {
       btns[i].classList.remove("active")
     }
     if(btn instanceof HTMLElement){
+      // add Class Active to clicked btn
       btn.classList.add("active")
     }
   }

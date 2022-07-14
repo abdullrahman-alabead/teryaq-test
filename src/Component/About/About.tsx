@@ -7,7 +7,9 @@ let About = () => {
   window.addEventListener("scroll", () => {
     let aboutHeading = document.querySelector(".about-container .main-heading")
     if(aboutHeading instanceof HTMLElement){
+      // check if visible height reached
       if(window.scrollY >= (aboutHeading.offsetTop + 400)){
+        // animate heading / image
         aboutHeading.style.animation = "fadeIn 1s ease-in-out forwards"
         let img = document.querySelector(".workers-img") as HTMLElement
         img.style.animation = "fadeInRight 1s 1s ease-in-out forwards"
