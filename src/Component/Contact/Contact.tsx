@@ -3,7 +3,7 @@ import './Contact.scss'
 
 let Contact = () => {
   return(
-    <div className='contact container-fluid'>
+    <div className='contact container-fluid' id='contact'>
       <p className="main-heading">Message Us
       <div className="triangle"></div></p>
       <form>

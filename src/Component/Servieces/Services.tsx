@@ -36,7 +36,7 @@ let Services = () => {
 
 
   return (
-    <div className="services container-fluid text-center">
+    <div className="services container-fluid text-center" id="services">
       <div className="dotted-box"></div>
       <p className="main-heading">Our Services</p>
       <div className="switcher">

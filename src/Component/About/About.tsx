@@ -17,7 +17,7 @@ let About = () => {
   })
   
   return(
-    <div className='about-container container-fluid'>
+    <div className='about-container container-fluid' id='about'>
       <p className="main-heading">About Company
       <div className="triangle"></div>
       </p>

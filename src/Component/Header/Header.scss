@@ -12,9 +12,13 @@
         font-family: 'Readex-pro';
         cursor: pointer;
         color: white;
-        transition: all .4s;
         opacity: 0;
-        &:hover{
+        a{
+          color: white;
+          transition:.4s;
+
+        }
+        &:hover a{
           color: rgb(168, 188, 222);
         }
       }

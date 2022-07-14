@@ -1,0 +1,109 @@
+.clients-container{
+  position: relative;
+  .clients-slider{
+    width: 500px;
+    position: relative;
+    margin-bottom: 2rem;
+    overflow: hidden;
+    .clients{
+    transform: translateX(2rem);
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+
+    .client{
+      position: relative;
+      text-align: center;
+      width: 450px;
+      background-color: #f0f0f0;
+      padding: 1rem 2rem;
+      border-radius: .3rem;
+      margin-right: 3rem;
+      .client-name{
+        margin: 0;
+      }
+      .stars{
+        margin-bottom:2rem ;
+        color: #55a58a;
+      }
+      .client-img{
+        position: absolute;
+        width: 5.5rem;
+        top: 0;
+        left: 0;
+        transform: translate(-30%, -30%);
+        border: .4rem solid white;
+        border-radius: 50%;
+      }
+    }
+    }
+  }
+  .slider{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .slider-btn{
+      width: 12px;
+      height: 12px;
+      background-color: #d9d9d9;
+      border-radius: 50%;
+      transition-duration: .3s;
+      cursor: pointer;
+      &:not(:last-child){
+        margin-right: .5rem;
+      }
+      &.active, &:hover{
+        background-color: #7DB6A3;
+      }
+    }
+  }
+  .dots{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    z-index: -1;
+    &.left-dots{
+      top: 20%;
+      left: 10%;
+    }
+  }
+}
+
+
+
+// Media Queries:
+@media (max-width: 991px) {
+  .clients-container{
+  .clients-slider{
+    width: 300px;
+    overflow: visible;
+    .clients{
+      transform: translateX(0rem);
+      flex-direction: column;
+    .client{
+      padding-top: 4rem;
+      width: 100%;
+      margin: 0 auto 3rem;
+      .client-img{
+        width: 5.5rem;
+        top: -.5rem;
+        left: 50%;
+        transform: translate(-50%, -30%);
+      }
+    }
+    }
+  }
+  .slider{
+    display: none;
+  }
+}
+}
+
+@media (max-width: 768px){
+  .clients-container{
+    .clients-slider{
+      .clients{
+        transform: translateX(-1rem);
+      }
+    }
+  }
+}
